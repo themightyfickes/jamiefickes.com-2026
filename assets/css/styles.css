@@ -164,6 +164,9 @@ h3 {
     display: flex;
     justify-content: center;
 }
+.hero-layout {
+    min-height: 520px;
+}
 
 .hero-portrait {
     width: 100%;
@@ -663,7 +666,9 @@ h3 {
 
 @media (max-width: 900px) {
 
-    .hero-layout,
+.hero-layout {
+    min-height: auto;
+}
     .about-grid,
     .contact-box,
     .feature-block,
