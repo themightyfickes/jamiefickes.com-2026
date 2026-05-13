@@ -513,22 +513,18 @@ h3 {
 }
 .feature-image {
     width: 100%;
-    max-width: 260px;
+    max-width: 300px;
 
-    border-radius: 24px;
+    display: block;
 
-    background-color: white;
-
-    padding: 10px;
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,0.16);
-
-    border: 1px solid rgba(255,255,255,0.65);
-
-    transform: rotate(-1deg);
+    border-radius: 20px;
 
     object-fit: contain;
+
+    box-shadow:
+        0 14px 30px rgba(0,0,0,0.14);
+
+    border: 1px solid rgba(0,0,0,0.08);
 }
 .pm-feature {
     background-color: #EAF0F7;
