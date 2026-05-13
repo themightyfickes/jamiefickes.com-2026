@@ -506,10 +506,6 @@ h3 {
     width: 100%;
     max-width: 260px;
 
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-
     border-radius: 24px;
 
     background-color: white;
@@ -522,6 +518,8 @@ h3 {
     border: 1px solid rgba(255,255,255,0.65);
 
     transform: rotate(-1deg);
+
+    object-fit: contain;
 }
 .pm-feature {
     background-color: #EAF0F7;
