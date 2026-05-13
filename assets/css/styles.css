@@ -89,15 +89,45 @@ h3 {
 }
 
 .nav-links a {
+    position: relative;
+
     color: white;
+
     text-decoration: none;
+
     opacity: 0.9;
-    transition: opacity 0.2s ease;
+
+    padding-bottom: 4px;
+
+    transition:
+        opacity 0.2s ease,
+        color 0.2s ease;
+}
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0%;
+    height: 2px;
+
+    background-color: var(--jamie-gold);
+
+    transition: width 0.25s ease;
+}
+.nav-links a:hover {
+    opacity: 1;
 }
 
 .nav-links a:hover {
     opacity: 1;
-    text-decoration: underline;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 /* HERO */
