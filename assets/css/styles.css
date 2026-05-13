@@ -25,12 +25,23 @@ body {
 
     background-color: var(--jamie-cream);
 
-    background-image:
-        linear-gradient(
-            rgba(255,255,255,0.45),
-            rgba(255,255,255,0.45)
-        );
+background-image:
+    linear-gradient(
+        rgba(255,255,255,0.55),
+        rgba(255,255,255,0.55)
+    ),
 
+    radial-gradient(
+        circle at top left,
+        rgba(217,164,65,0.05),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(31,58,95,0.04),
+        transparent 30%
+    );
     color: var(--jamie-charcoal);
 
     font-family: 'Manrope', sans-serif;
