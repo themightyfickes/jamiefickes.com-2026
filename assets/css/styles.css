@@ -152,7 +152,20 @@ h3 {
         #29486F
     );
 }
+.site-header::after {
+    content: "";
 
+    display: block;
+
+    height: 70px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0),
+            var(--jamie-cream)
+        );
+}
 .hero-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
