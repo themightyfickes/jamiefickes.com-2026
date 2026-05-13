@@ -91,9 +91,7 @@ h3 {
 .nav-links a {
     color: white;
     text-decoration: none;
-
     opacity: 0.9;
-
     transition: opacity 0.2s ease;
 }
 
