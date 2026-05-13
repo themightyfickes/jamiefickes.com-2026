@@ -129,7 +129,13 @@ h3 {
 .nav-links a:hover::after {
     width: 100%;
 }
+.active-nav {
+    opacity: 1 !important;
+}
 
+.active-nav::after {
+    width: 100% !important;
+}
 /* HERO */
 
 .site-header {
@@ -411,7 +417,42 @@ h3 {
 
     color: var(--jamie-slate);
 }
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
+    gap: 22px;
+}
+
+.service-item {
+    background-color: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.08);
+
+    border-left: 6px solid var(--fixit-yellow);
+}
+
+.service-item h3 {
+    margin-top: 0;
+
+    color: var(--fixit-blue);
+}
+
+.service-item p {
+    margin-bottom: 0;
+
+    color: #444;
+}
 .pm-card {
     border-top-color: var(--jamie-blue);
 }
@@ -717,7 +758,13 @@ h3 {
     opacity: 1;
     text-decoration: underline;
 }
+.footer-tagline {
+    margin-top: 6px;
 
+    font-size: 0.9rem;
+
+    opacity: 0.72;
+}
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
