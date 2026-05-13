@@ -105,22 +105,24 @@ h3 {
 /* HERO */
 
 .site-header {
-    background:
-        radial-gradient(
-            circle at top right,
-            rgba(255,255,255,0.08),
-            transparent 30%
-        ),
+	background:
+    radial-gradient(
+        circle at top right,
+        rgba(255,255,255,0.10),
+        transparent 30%
+    ),
 
-        linear-gradient(
-            135deg,
-            #1F3A5F,
-            #29486F
-        );
+    radial-gradient(
+        circle at bottom left,
+        rgba(217,164,65,0.10),
+        transparent 35%
+    ),
 
-    color: white;
-
-    padding: 80px 0;
+    linear-gradient(
+        135deg,
+        #1F3A5F,
+        #29486F
+    );
 }
 
 .hero-layout {
@@ -513,18 +515,22 @@ h3 {
 }
 .feature-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
 
-    display: block;
+    border-radius: 24px;
 
-    border-radius: 20px;
+    background-color: white;
 
-    object-fit: contain;
+    padding: 10px;
 
     box-shadow:
-        0 14px 30px rgba(0,0,0,0.14);
+        0 18px 40px rgba(0,0,0,0.16);
 
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.65);
+
+    transform: rotate(-1deg);
+
+    object-fit: contain;
 }
 .pm-feature {
     background-color: #EAF0F7;
