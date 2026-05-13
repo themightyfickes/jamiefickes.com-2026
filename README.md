@@ -29,3 +29,9 @@ assets/
     css/
         styles.css
     images/
+Contact
+
+Email: jamiefickes.work@gmail.com
+
+Schedule Tech Help:
+https://calendly.com/jamiefickes/tech-help-consultation
