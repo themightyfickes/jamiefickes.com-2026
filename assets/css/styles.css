@@ -486,7 +486,17 @@ h3 {
 .feature-block p {
     font-size: 1.1rem;
 }
+.feature-block {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.feature-block:hover {
+    transform: translateY(-4px);
 
+    box-shadow:
+        0 16px 36px rgba(0,0,0,0.08);
+}
 .feature-visual {
     display: flex;
     justify-content: center;
