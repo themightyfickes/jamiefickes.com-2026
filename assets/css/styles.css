@@ -133,24 +133,32 @@ h3 {
 /* HERO */
 
 .site-header {
-	background:
-    radial-gradient(
-        circle at top right,
-        rgba(255,255,255,0.10),
-        transparent 30%
-    ),
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,255,255,0.10),
+            transparent 30%
+        ),
 
-    radial-gradient(
-        circle at bottom left,
-        rgba(217,164,65,0.10),
-        transparent 35%
-    ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(217,164,65,0.10),
+            transparent 35%
+        ),
 
-    linear-gradient(
-        135deg,
-        #1F3A5F,
-        #29486F
-    );
+        linear-gradient(
+            135deg,
+            #1F3A5F,
+            #29486F
+        );
+
+    color: white;
+
+    padding: 80px 0;
+
+    position: relative;
+
+    overflow: hidden;
 }
 .site-header::after {
     content: "";
@@ -300,9 +308,8 @@ h3 {
 /* SECTIONS */
 
 .section {
-    padding: 90px 0;
+    padding: 70px 0 90px;
 }
-
 .section-heading {
     max-width: 760px;
     margin-bottom: 36px;
@@ -715,9 +722,11 @@ h3 {
 
 @media (max-width: 900px) {
 
-.hero-layout {
-    min-height: auto;
-}
+    .hero-layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
     .about-grid,
     .contact-box,
     .feature-block,
