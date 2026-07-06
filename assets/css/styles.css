@@ -541,16 +541,15 @@ h3 {
     font-size: 1.1rem;
 }
 
-.about-card {
-    background-color: var(--jamie-cream);
+.about-card a {
+    color: var(--jamie-blue);
+    font-weight: 600;
+    text-decoration: none;
+}
 
-    border-radius: 18px;
-    border-left: 6px solid var(--jamie-gold);
-
-    padding: 30px;
-
-    box-shadow:
-        0 8px 24px rgba(0,0,0,0.07);
+.about-card a:hover {
+    color: var(--fixit-blue);
+    text-decoration: underline;
 }
 
 .about-card h3 {
