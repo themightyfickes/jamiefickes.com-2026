@@ -1,842 +1,152 @@
-:root {
-    --jamie-blue: #1F3A5F;
-    --jamie-cream: #F7F3EA;
-    --jamie-charcoal: #222831;
-    --jamie-slate: #5C6670;
-    --jamie-gold: #D9A441;
-
-    --fixit-blue: #0057A8;
-    --fixit-yellow: #FFD447;
-}
-
-/* GLOBAL */
-
-::selection {
-    background-color: var(--jamie-gold);
-    color: var(--jamie-charcoal);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-
-    background-color: var(--jamie-cream);
-
-background-image:
-linear-gradient(
-rgba(255,255,255,0.55),
-rgba(255,255,255,0.55)
-),
-radial-gradient(
-circle at top left,
-rgba(217,164,65,0.05),
-transparent 28%
-),
-radial-gradient(
-circle at bottom right,
-rgba(31,58,95,0.04),
-transparent 30%
-);
-    color: var(--jamie-charcoal);
-
-    font-family: 'Manrope', sans-serif;
-
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Fraunces', serif;
-    letter-spacing: -0.02em;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* NAVIGATION */
-
-.top-nav {
-    background-color: rgba(0,0,0,0.18);
-    padding: 18px 0;
-}
-
-.nav-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-}
-
-.site-name {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.nav-links a {
-    position: relative;
-
-    color: white;
-
-    text-decoration: none;
-
-    opacity: 0.9;
-
-    padding-bottom: 4px;
-
-    transition:
-        opacity 0.2s ease,
-        color 0.2s ease;
-}
-.nav-links a::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 0%;
-    height: 2px;
-
-    background-color: var(--jamie-gold);
-
-    transition: width 0.25s ease;
-}
-.nav-links a:hover {
-    opacity: 1;
-}
-
-.nav-links a:hover {
-    opacity: 1;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-.active-nav {
-    opacity: 1 !important;
-}
-
-.active-nav::after {
-    width: 100% !important;
-}
-/* HERO */
+<!DOCTYPE html>
+<html lang="en">
 
-.site-header {
-    background:
-        radial-gradient(
-            circle at top right,
-            rgba(255,255,255,0.10),
-            transparent 30%
-        ),
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Without the Tech Talk | Fixit Fickes</title>
 
-        radial-gradient(
-            circle at bottom left,
-            rgba(217,164,65,0.10),
-            transparent 35%
-        ),
+    <meta name="description"
+          content="Plain-English technology explanations from Fixit Fickes, covering computers, phones, cloud storage, AI, backups, scams, and everyday tech questions.">
 
-        linear-gradient(
-            135deg,
-            #1F3A5F,
-            #29486F
-        );
+    <link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
 
-    color: white;
+<body>
 
-    padding: 80px 0;
+<header class="site-header">
 
-    position: relative;
+    <nav class="top-nav">
+        <div class="container nav-inner">
+            <a class="site-name" href="index.html">Jamie Fickes</a>
 
-    overflow: hidden;
-}
-.site-header::after {
-    content: "";
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="project-management.html">Project Management</a>
+                <a href="fixit-fickes.html" class="active-nav">Fixit Fickes</a>
+                <a href="index.html#creative">Creative</a>
+                <a href="index.html#community">Community</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    display: block;
+    <div class="container hero-layout">
+        <div class="hero-text">
+            <p class="eyebrow">Fixit Fickes</p>
 
-    height: 70px;
+            <h1>Technology Without the Tech Talk</h1>
 
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(255,255,255,0),
-            var(--jamie-cream)
-        );
-}
-.hero-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+            <p class="intro">
+                Technology doesn't have to be confusing. This series explains everyday
+                tech in plain English—without jargon, scare tactics, or making you
+                feel foolish for asking.
+            </p>
 
-    gap: 48px;
-    align-items: center;
+            <p class="hero-note">
+                Simple answers to common questions about computers, phones, cloud storage,
+                AI, backups, scams, and everyday technology.
+            </p>
+        </div>
+    </div>
 
-    padding-top: 70px;
-}
+</header>
 
-.hero-text h1 {
-	color: white;
-    font-size: 3rem;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+<main>
 
-    margin: 0;
-}
+    <section class="section">
+        <div class="container">
 
-.intro {
-     color: rgba(255,255,255,0.9);
-	font-size: 1.2rem;
+            <div class="section-heading">
+                <h2>Helpful Technology Articles</h2>
+                <p>
+                    Start here for practical explanations written for normal people,
+                    not computer technicians.
+                </p>
+            </div>
 
-    max-width: 720px;
+            <div class="card-grid">
 
-    margin-top: 24px;
-}
+                <a class="card card-link fixit-card" href="cloud.html">
+                    <span class="card-label">Technology Without the Tech Talk</span>
 
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
+                    <h3>What Is the Cloud, and Where Are My Files Actually Going?</h3>
 
-    gap: 16px;
+                    <p>
+                        You've heard “it's in the cloud” for years—but what does that
+                        actually mean? Learn where your files really go and why it matters.
+                    </p>
+                </a>
 
-    margin-top: 32px;
-}
+                <a class="card card-link" href="#">
+                    <span class="card-label">Coming Soon</span>
 
-.hero-image {
-    display: flex;
-    justify-content: center;
-}
-.hero-layout {
-    min-height: 520px;
-}
+                    <h3>What Can a Regular Person Actually Use AI For?</h3>
 
-.hero-portrait {
-    width: 100%;
-    max-width: 340px;
+                    <p>
+                        Practical examples of how everyday people can use AI without
+                        getting buried in buzzwords.
+                    </p>
+                </a>
 
-    border-radius: 28px;
+                <a class="card card-link" href="#">
+                    <span class="card-label">Coming Soon</span>
 
-    object-fit: cover;
+                    <h3>Does My Computer Really Need Regular Maintenance?</h3>
 
-    box-shadow:
-        0 18px 40px rgba(0,0,0,0.24);
+                    <p>
+                        What is worth checking, what is unnecessary, and when it makes
+                        sense to ask for help.
+                    </p>
+                </a>
 
-    border: 4px solid rgba(255,255,255,0.18);
-}
-.hero-note {
-    margin-top: 18px;
+            </div>
 
-    color: rgba(255,255,255,0.78);
+        </div>
+    </section>
 
-    font-size: 0.95rem;
-}
-.eyebrow {
-    color: var(--jamie-gold);
+    <section class="about-section" id="contact">
+        <div class="container">
 
-    font-weight: 700;
+            <div class="about-card">
+                <h3>Have a technology question?</h3>
 
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+                <p>
+                    If there is a computer, phone, cloud, backup, scam, or account
+                    question you've always wanted explained clearly, send it my way.
+                </p>
 
-    margin: 0 0 12px;
-}
+                <p>
+                    Fixit Fickes helps local clients with practical, patient technology support.
+                </p>
 
-.eyebrow.dark {
-    color: var(--jamie-gold);
-}
+                <a class="button primary-button" href="mailto:jamiefickes.work@gmail.com">
+                    Ask Jamie
+                </a>
+            </div>
 
-/* BUTTONS */
+        </div>
+    </section>
 
-.button {
-    display: inline-block;
+</main>
 
-    text-decoration: none;
+<footer class="site-footer">
+    <div class="container footer-inner">
 
-    padding: 14px 22px;
+        <div>
+            <p>&copy; 2026 Jamie Fickes</p>
+            <p class="footer-tagline">Clear communication. Practical systems. Friendly local tech help.</p>
+        </div>
 
-    border-radius: 999px;
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="project-management.html">Project Management</a>
+            <a href="fixit-fickes.html">Fixit Fickes</a>
+            <a href="mailto:jamiefickes.work@gmail.com">Email</a>
+        </div>
 
-    font-weight: 700;
+    </div>
+</footer>
 
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease;
-}
-
-.button:hover {
-    transform: translateY(-2px);
-}
-
-.primary-button {
-    background-color: var(--jamie-gold);
-    color: var(--jamie-charcoal);
-}
-
-.outline-button {
-    color: white;
-
-    border: 2px solid rgba(255,255,255,0.65);
-}
-
-.outline-button:hover {
-    background-color: rgba(255,255,255,0.12);
-}
-
-.secondary-button {
-    background-color: rgba(255,255,255,0.12);
-
-    color: white;
-
-    border: 2px solid rgba(255,255,255,0.22);
-
-    backdrop-filter: blur(6px);
-}
-
-.secondary-button:hover {
-    background-color: rgba(255,255,255,0.18);
-}
-
-/* SECTIONS */
-
-.section {
-    padding: 70px 0 90px;
-}
-.section-heading {
-    max-width: 760px;
-    margin-bottom: 36px;
-}
-
-.section-heading h2 {
-    margin-bottom: 12px;
-}
-
-.section-heading p {
-    color: #444;
-    font-size: 1.1rem;
-}
-
-.section h2 {
-    color: var(--jamie-blue);
-
-    font-size: 2.2rem;
-
-    margin-bottom: 30px;
-}
-.section-intro {
-    max-width: 700px;
-    margin-bottom: 2rem;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    opacity: 0.9;
-}
-/* CARDS */
-
-.card-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
-
-    gap: 22px;
-}
-
-.card {
-    position: relative;
-    overflow: hidden;
-
-    background: white;
-
-    border-radius: 18px;
-    border-top: 6px solid var(--jamie-gold);
-
-    padding: 34px;
-
-    box-shadow:
-        0 8px 24px rgba(0,0,0,0.08);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 14px 34px rgba(0,0,0,0.14);
-}
-
-.card::before {
-    content: "";
-
-    display: block;
-
-    width: 38px;
-    height: 38px;
-
-    border-radius: 50%;
-
-    margin-bottom: 22px;
-
-    background-color: var(--jamie-gold);
-}
-
-.card h3 {
-    margin-top: 0;
-    margin-bottom: 14px;
-
-    color: var(--jamie-blue);
-
-    font-size: 1.4rem;
-}
-
-.card p strong {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #4da3ff;
-    font-size: 1.05rem;
-}
-
-.card-label {
-    display: inline-block;
-
-    margin-bottom: 14px;
-
-    font-size: 0.78rem;
-    font-weight: 700;
-
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-
-    color: var(--jamie-slate);
-}
-.card-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
-    gap: 22px;
-}
-
-.service-item {
-    background-color: white;
-
-    border-radius: 18px;
-
-    padding: 30px;
-
-    box-shadow:
-        0 8px 24px rgba(0,0,0,0.08);
-
-    border-left: 6px solid var(--fixit-yellow);
-}
-
-.service-item h3 {
-    margin-top: 0;
-
-    color: var(--fixit-blue);
-}
-
-.service-item p {
-    margin-bottom: 0;
-
-    color: #444;
-}
-.pm-card {
-    border-top-color: var(--jamie-blue);
-}
-
-.pm-card::before {
-    background-color: var(--jamie-blue);
-}
-
-.fixit-card {
-    background:
-        linear-gradient(
-            135deg,
-            var(--fixit-blue),
-            #0B6CC4
-        );
-
-    color: white;
-
-    border-top-color: var(--fixit-yellow);
-}
-
-.fixit-card::before {
-    background-color: var(--fixit-yellow);
-}
-
-.fixit-card h3 {
-    color: var(--fixit-yellow);
-}
-
-.fixit-card p {
-    color: rgba(255,255,255,0.92);
-}
-
-.fixit-card .card-label {
-    color: var(--fixit-yellow);
-}
-
-.creative-card {
-    border-top-color: #B66A50;
-}
-
-.creative-card::before {
-    background-color: #B66A50;
-}
-
-.community-card {
-    border-top-color: #6F8F72;
-}
-
-.community-card::before {
-    background-color: #6F8F72;
-}
-
-/* ABOUT */
-
-.about-section {
-    background-color: white;
-
-    padding: 80px 0;
-
-    border-top: 1px solid rgba(0,0,0,0.05);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-    gap: 48px;
-    align-items: start;
-}
-
-.about-text h2 {
-    color: var(--jamie-blue);
-
-    font-size: 2.4rem;
-    line-height: 1.2;
-
-    margin-top: 0;
-}
-
-.about-text p {
-    color: #444;
-    font-size: 1.1rem;
-}
-
-.about-card {
-    background-color: var(--jamie-cream);
-
-    border-radius: 18px;
-    border-left: 6px solid var(--jamie-gold);
-
-    padding: 30px;
-
-    box-shadow:
-        0 8px 24px rgba(0,0,0,0.07);
-}
-
-.about-card h3 {
-    margin-top: 0;
-    color: var(--jamie-blue);
-}
-
-/* FEATURED */
-
-.featured-section {
-    padding: 80px 0;
-}
-
-.feature-block {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-
-    gap: 48px;
-    align-items: center;
-
-    border-radius: 24px;
-
-    padding: 60px;
-
-    margin-bottom: 40px;
-
-    overflow: hidden;
-}
-
-.reverse-layout {
-    grid-template-columns: 1fr 1.4fr;
-}
-
-.feature-text {
-    max-width: 760px;
-}
-
-.feature-block h2 {
-    font-size: 2.3rem;
-    line-height: 1.2;
-
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.feature-block p {
-    font-size: 1.1rem;
-}
-.feature-block {
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-.feature-block:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 16px 36px rgba(0,0,0,0.08);
-}
-.feature-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.feature-image {
-    width: 100%;
-    max-width: 260px;
-
-    border-radius: 24px;
-
-    background-color: white;
-
-    padding: 10px;
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,0.16);
-
-    border: 1px solid rgba(255,255,255,0.65);
-
-    transform: rotate(-1deg);
-
-    object-fit: contain;
-}
-.pm-feature {
-    background-color: #EAF0F7;
-}
-
-.fixit-feature {
-    background:
-        linear-gradient(
-            135deg,
-            var(--fixit-blue),
-            #0B6CC4
-        );
-
-    color: white;
-}
-
-.fixit-feature h2 {
-    color: white;
-}
-
-.fixit-feature p {
-    color: rgba(255,255,255,0.92);
-}
-
-.creative-feature {
-    background-color: #F6ECE7;
-}
-
-.community-feature {
-    background-color: #EDF4EE;
-}
-
-/* CONTACT */
-
-.contact-section {
-    background-color: var(--jamie-blue);
-
-    color: white;
-
-    padding: 80px 0;
-}
-
-.contact-box {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-    gap: 40px;
-    align-items: center;
-}
-
-.contact-box h2 {
-    font-size: 2.2rem;
-    line-height: 1.2;
-
-    margin-top: 0;
-}
-
-.contact-box p {
-    max-width: 700px;
-
-    font-size: 1.1rem;
-}
-
-.contact-details {
-    margin-top: 24px;
-}
-
-.contact-details a {
-    color: var(--jamie-gold);
-
-    text-decoration: none;
-}
-
-.contact-details a:hover {
-    text-decoration: underline;
-}
-
-.contact-actions {
-    display: flex;
-    flex-direction: column;
-
-    gap: 16px;
-}
-.contact-section,
-.contact-section p,
-.contact-section h2,
-.contact-section strong {
-    color: #ffffff;
-}
-
-.contact-section a {
-    color: #ffffff;
-    font-weight: 700;
-}
-/* FOOTER */
-
-.site-footer {
-    background-color: var(--jamie-charcoal);
-
-    color: white;
-
-    padding: 28px 0;
-}
-
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 24px;
-}
-
-.footer-inner p {
-    margin: 0;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 16px;
-}
-
-.footer-links a {
-    color: white;
-
-    text-decoration: none;
-
-    opacity: 0.85;
-
-    transition: opacity 0.2s ease;
-}
-
-.footer-links a:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
-.footer-tagline {
-    margin-top: 6px;
-
-    font-size: 0.9rem;
-
-    opacity: 0.72;
-}
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-
-    .hero-layout {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
-
-    .about-grid,
-    .contact-box,
-    .feature-block,
-    .reverse-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text h1 {
-        font-size: 2.4rem;
-    }
-
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-
-    .card-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .site-header {
-        padding: 56px 0;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .feature-block {
-        padding: 36px 28px;
-    }
-
-    .feature-block h2 {
-        font-size: 1.8rem;
-    }
-
-    .nav-inner,
-    .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        gap: 12px;
-    }
-}
+</body>
+</html>
