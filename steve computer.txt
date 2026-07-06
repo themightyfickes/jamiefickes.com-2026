@@ -1,0 +1,36 @@
+Search Summary - 2026-06-05
+
+Worked from the completed R-Studio image on Jamie’s main computer, not from Steve’s live laptop.
+
+Search location:
+Basic data partition\Root
+
+Searches performed:
+*pete*
+*petes*
+*Pete's*
+*receipt*
+*CB*
+*CB*receipt*
+*Steganos*
+*Safe*
+*Vault*
+*bassword*
+*password*
+
+Results:
+- No useful match found for Pete / Petes / Pete's.
+- No useful match found for CB Receipts.
+- Receipt search found an unrelated Camera Card replacement receipt PDF and printer/system noise.
+- Steganos search found Steganos installer/download evidence.
+- Safe search found Steganos Safe folder and Steganos installer/download evidence, plus unrelated browser/system “safe” noise.
+- Vault search found Windows security vault system files only.
+- bassword search found only a recovery-work shortcut, not Steve’s original file.
+- password search found Edge/browser/system password-related files, not Steve’s requested document.
+
+Conclusion:
+Evidence supports that Steganos Safe was present or used at some point, but no identifiable Steganos vault/container was found in the image.
+
+The requested bassword2.doc file was not found directly.
+
+Recovered user data is available for client review, but some files may not open because they may be damaged, incomplete, overwritten, or OneDrive cloud placeholders.
